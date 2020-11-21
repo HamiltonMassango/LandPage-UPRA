@@ -22,3 +22,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+var img = ["espaço.jpg", "espaço1.jpg", "espaço2.jpg", "g4.jpg"];
+var b = 0;
+setInterval(() => {
+  const main = document.querySelector('main img');
+  main.setAttribute("src", "./img/" + img[b]);
+  if(b == img.length - 1){
+    b = 0;
+  }
+  b++;
+}, 3000);
