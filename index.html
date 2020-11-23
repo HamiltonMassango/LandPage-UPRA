@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upra 2020</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free/css/all.css">
 </head>
 <body>
     <div class="info-import">
@@ -16,24 +17,28 @@
             <a href="">Portal Académicos</a>
             <button id="myBtn">Contacto</button>
         </div>
+        <i class="fas fa-toggle-off" id="modo"></i>
     </div>
    <header>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#Cursos">Cursos</a></li>
-                <li><a href="#SA">Serviços Academicos</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#inicio" class="links">Inicio</a></li>
+                <li><a href="#sobre" class="links">Sobre</a></li>
+                <li><a href="#Cursos" class="links">Cursos</a></li>
+                <li><a href="#SA" class="links">Serviços Academicos</a></li>
+                <li><a href="#galeria" class="links">Galeria</a></li>
             </ul>
+            
         </nav>
+        
        </div>      
    </header>
-
-   <main>
-       <img src="./img/main.jpg" alt="">
-   </main>
-   <section id="sobre">
+    <section id="inicio">
+        <main>
+            <img src="./img/main.jpg" alt="">
+        </main>
+    </section>
+    <section id="sobre">
         <div class="img">
             <img src="./img/diadaupra.jpg" alt="" srcset="">
         </div>
@@ -75,8 +80,8 @@
                             <p><br></p>
                         
             </div>
-   </section>
-   <section id="Cursos">
+    </section>
+    <section id="Cursos">
        
        <div class="Cursos-item">
            <img src="" alt="" srcset="">
@@ -109,8 +114,8 @@
             <li>Turismo e Hotelaria</li>
           </ul>
     </div>
-   </section>
-   <section id="SA">
+    </section>
+    <section id="SA">
         <h1>Serviços Academicos</h1>
         <div class="saContainer">
             
@@ -127,11 +132,7 @@
                 <img src="./img/espaço2.jpg" alt="" class="imgGaleria">
             </div>
         </div>
-   </section>
-   <section id="fotos">
-       
-   </section>
-  
+    </section>
     <section id="galeria">
         <h1>
             Galeria
@@ -161,19 +162,12 @@
        
 
     </section>
-    <section class="newsletter">
-        <div class="newsletter-info">
-            <h1>Fale com a gente </h1>
-            <p>assine e fique por dentro das novidades</p>
-        </div>
-        <form class="newsletter-form">
-            <input type="text" placeholder="Seu e-mail">
-            <button type="submit">Assinar</button>
-        </form>
-    </section>
-    <footer class="footer">
-        <p>UPRA © Todos os direitos reservados.</p>
-    </footer>
+    
+        <footer class="footer">
+            <p>UPRA © Todos os direitos reservados.</p>
+        </footer>
+    
+
     <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -190,6 +184,7 @@
           </div>
         </div>    
       </div>
+      
       <div id="modelFoto" class="modal">
         <div class="modal-content">
             <img src="" alt="" srcset="" class="imgGaleriaShow">

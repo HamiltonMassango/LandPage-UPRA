@@ -6,8 +6,12 @@ body, h1, h2, p, ul li, a {
 body {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     color: #222222;
+    background: #fff;
 }
-
+.dracula {
+    color: #222222;
+    background: #000;
+}
 ul {
     list-style: none;
 }
@@ -31,6 +35,12 @@ header {
 nav {
     background-color: #000;
 }
+.nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+} 
 .info-import, nav ul{
     max-width: 960px;
     margin: 0 auto;
@@ -41,14 +51,16 @@ nav {
     align-items: center;
 }
 
-
+nav span {
+    color: #f7f7f7;
+}
 nav ul {
     display: flex;
     flex-wrap: wrap;
 }
 
 nav ul li a{
-    color: #fff;
+    color: #222222;
     font-size: 1em;
     display: block;
     padding: 10px;
@@ -61,7 +73,11 @@ nav ul li a:hover {
    border-bottom: 1px solid #039628;
    
 }
-
+.active {
+    color: #039628;
+    text-decoration: transparent;
+    border-bottom: 1px solid #039628;
+}
 .info-import a, button {
     background-color: #039628;
     color: #fff;
@@ -73,7 +89,17 @@ nav ul li a:hover {
     background-color: #fff;
     color: #039628;
 }
-
+.info-import i {
+    font-size: 2em;
+}
+.i-ON {
+    background: #000;
+    color: #fff;
+} 
+.i-OFF {
+    background: #fff;
+    color: #000 !important; 
+}
 main {
     height: 70vh;
     max-width: 90vw;
