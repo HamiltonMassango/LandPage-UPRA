@@ -1,6 +1,7 @@
-
+﻿
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("modelFoto");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -74,7 +75,34 @@ setInterval(() => {
     x = 0;
   }
   document.querySelector('main img').setAttribute('src','./img/' + img[x]);
-  console.log('./img/' + img[x]);
   x++;
   
-}, 2000)
+}, 2000); 
+
+modal1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+
+function enviarDados(e) {
+  e.preventDefault();
+  var name = document.querySelector('#name');
+  var email = document.querySelector('#email');
+  var mensagem = document.querySelector('#assunto');
+
+  console.log({name.value, email.value, mensagem.value});
+}
+
+var Enviar = document.querySelector('form #enviar');
+
+Enviar.addEventListener('click', enviarDados);
+
+document.addEventListener('click', (e)=>{
+  const el = e.target;
+  if (el.classList.contains('imgGaleria')){
+    modal1.style.display = "block";
+    document.querySelector('.imgGaleriaShow').setAttribute('src', e.target.getAttribute('src'));
+
+    return ;
+  }
+});
